@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class blockmove : MonoBehaviour {
+public class DeathBox : MonoBehaviour {
 
-public int counter;
+	void OnTriggerEnter2D (Collider2D other){
+
+
+		if(other.name == "gaben"){
+			Debug.Log("Player Enters Death Zone");
+			
+		}
+	}
+
+
 
 
 
@@ -16,7 +25,6 @@ public int counter;
 	
 	// Update is called once per frame
 	void Update () {
-		counter++;
 		
 	}
 }

@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
 
-	private Rigidbody2D gaben;
+	public Rigidbody2D gaben;
 
 	//particles
 
@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour {
 //Use this for initialization
 
 	void Start () {
-		gaben = FindObjectOfType<Rigidbody2D>();
+		//gaben = FindObjectOfType<Rigidbody2D>();
 	}
 
 

@@ -783,6 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentCheckPoint: {fileID: 1215085896}
+  gaben: {fileID: 656807272}
   DeathParticle: {fileID: 557180272}
   RespawnParticle: {fileID: 1289997843}
   RespawnDelay: 1
@@ -1023,7 +1024,7 @@ Prefab:
     - target: {fileID: 198029962179306114, guid: eac15ab138763498abc7c2defa2168bb,
         type: 2}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1e+20
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac15ab138763498abc7c2defa2168bb, type: 2}

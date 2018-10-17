@@ -12,12 +12,12 @@ public class Projectile : MonoBehaviour {
 	public GameObject ProjectileParticle;
 
 	public int PointsForKill;
-
+	public int deathtime;
 	// Use this for initialization
 	void Start () {
 		if(gaben.transform.localScale.x < 0){
 			Speed = -Speed;
-
+		
 			//speed = speed * Mathf.Sign(gaben.transform.localScle.x);
 
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(speed + ()

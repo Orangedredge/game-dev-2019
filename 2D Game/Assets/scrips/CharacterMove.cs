@@ -64,7 +64,8 @@ private float moveVelocity;
 		}
 
 		//to double jump
-		if (Input.GetKeyDown (KeyCode.Space) && doublejump ==  true && !grounded){
+		if (Input.GetKeyDown (KeyCode.Space) && doublejump ==  true && !grounded) 
+{
 			Jump();
 			doublejump = false;
 			

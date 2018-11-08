@@ -40,6 +40,7 @@ public class LevelManager : MonoBehaviour {
 	public IEnumerator RespawnPCo(){
 		//Generate Death Particle
 		Instantiate (DeathParticle, gaben.transform.position, gaben.transform.rotation);
+		
 		//hide pc
 		//PC.ennabled = false;
 		gaben.GetComponent<Renderer>().enabled = false;

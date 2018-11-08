@@ -36,7 +36,7 @@ private float moveVelocity;
 
 	// Update is called once per frame
 	void Update () {
-
+		Debug.Log(GetComponent<Rigidbody2D>().velocity.x);
 		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
 			Jump();
 			doublejump = true;
@@ -64,8 +64,7 @@ private float moveVelocity;
 		}
 
 		//to double jump
-		if (Input.GetKeyDown (KeyCode.Space) && doublejump ==  true && !grounded) 
-{
+		if (Input.GetKeyDown (KeyCode.Space) && doublejump ==  true && !grounded) {
 			Jump();
 			doublejump = false;
 			
@@ -78,5 +77,7 @@ private float moveVelocity;
 	public void Jump(){
 	GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpheight);
 	}
+	
+	
 
 }
